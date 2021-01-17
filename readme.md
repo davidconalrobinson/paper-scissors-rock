@@ -97,5 +97,5 @@ Some options for developing this program further:
 - Containerise the program (e.g.: Docker) - will help to manage dependencies.
 - Pattern recognition could be used to develop a robot move model that anticipates and responds to patterns in the users moves.
 - Player and game information could be stored in a SQL database - this can be done quite easily by using the SQLAlchemy ORM to map existing classes to relational database objects.
-- Build a simple web API around classes and methods (e.g.: using Flask) - this would enable lightweight web to be built that users could interact with remotely.
+- Build a simple web API around classes and methods (e.g.: using Flask) - this would enable a lightweight web app to be built that users could interact with remotely.
 - Build a lightweight UI (e.g.: PyQT).
