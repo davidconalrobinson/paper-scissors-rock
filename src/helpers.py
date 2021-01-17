@@ -3,7 +3,7 @@
 
 def get_input_sub_func(text):
 	"""
-	XXX
+	Get input. This is just a wrapper for the builtin input() function. Wrapping is required to support unit testing.
 	"""
 	input_value=input(text)
 	return input_value
