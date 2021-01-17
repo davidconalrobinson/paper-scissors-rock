@@ -13,7 +13,7 @@ def main():
 	"""
 	This is the main script.
 
-	It will create one human player and one human player and will keep repeating games until the human player chooses to stop.
+	It will create one human player and one robot player and will keep repeating games until the human player chooses to stop.
 	"""
 	print('')
 	print('##################################################')
