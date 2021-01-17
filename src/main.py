@@ -32,7 +32,7 @@ def main():
 		print('') # Print a blank line to help with formating the output.
 		no_rounds=try_again(get_input, 'How many rounds would you like to play? ', is_numeric=True)
 		# Loop through rounds.
-		for i in range(1, int(no_rounds)+1):
+		for i in range(0, int(no_rounds)):
 			game.play_one_round(verbose=True)
 		# Tally results and find the overall winner.
 		game.tally_results(verbose=True)
