@@ -35,45 +35,45 @@ Run the program!
 ### Repository Structure
 
 `
-paper-scissors-rock			Project directory
-|
-├── src 					Source directory
-|	|
-|	├── __init.py__
-|	|
-|	├── game.py 			Game class
-|	|
-|	├── helpers.py 			Helper functions
-|	|
-|	├── main.py 			Main run script
-|	|
-|	├── player.py 			Player class
-|	|
-|	├── robot.py 			Robot class
-|	|
-|	└── round.py 			Round class
-|
-├── tests					Unit test directory
-|	|
-|	├── __init.py__
-|	|
-|	├── game_test.py 		Game class unit tests
-|	|
-|	├── helpers_test.py 	Helper functions unit tests
-|	|
-|	├── main.py 			Main test script
-|	|
-|	├── player_test.py 		Player class unit tests
-|	|
-|	├── robot_test.py 		Robot class unit tests
-|	|
-|	└── round_test.py 		Round class init tests
-|
-├── readme.md 				Readme (this document)
-|
-├── requirements.txt 		Requirements file
-|
-└── run.py 					Run script
+paper-scissors-rock			Project directory			\
+|														\
+├── src 					Source directory			\
+|	|													\
+|	├── __init.py__ 									\
+|	| 												    \
+|	├── game.py 			Game class 					\
+|	| 													\
+|	├── helpers.py 			Helper functions 			\
+|	| 													\
+|	├── main.py 			Main run script 			\
+|	| 													\
+|	├── player.py 			Player class 				\
+|	| 													\
+|	├── robot.py 			Robot class 				\
+|	| 													\
+|	└── round.py 			Round class 				\
+| 														\
+├── tests					Unit test directory 		\
+|	| 													\
+|	├── __init.py__ 									\
+|	| 													\
+|	├── game_test.py 		Game class unit tests 		\
+|	| 													\
+|	├── helpers_test.py 	Helper functions unit tests \
+|	| 													\
+|	├── main.py 			Main test script 			\
+|	| 													\
+|	├── player_test.py 		Player class unit tests 	\
+|	| 													\
+|	├── robot_test.py 		Robot class unit tests 		\
+|	| 													\
+|	└── round_test.py 		Round class init tests 		\
+| 														\
+├── readme.md 				Readme (this document) 		\
+| 														\
+├── requirements.txt 		Requirements file 			\
+| 														\
+└── run.py 					Run script 					\
 `
 
 ### Classes
