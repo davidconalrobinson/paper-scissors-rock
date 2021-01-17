@@ -34,20 +34,25 @@ class Game():
 		return self.round_count
 
 
-	def play_one_round(self):
+	def play_one_round(self, verbose=False):
 		"""
 		Plays through one complete round. Each player makes a move and then the result of the round is computed.
 		"""
+		if verbose:
+			print('\n--- Round {} ---'.format(self.round_count+1))
 		self.count_one_round()
 		player1_move=self.player1.make_move()
 		player2_move=self.player2.make_move()
 		round=Round(self.player1.name, self.player2.name, self.player1.move, self.player2.move)
 		result, winner=round.calculate_result()
 		self.winner_dict[self.round_count]=winner
-		return player1_move, player2_move, result
+		if verbose:
+			print(player1_move)
+			print(player2_move)
+			print(result)
 
 
-	def tally_results(self):
+	def tally_results(self, verbose=False):
 		"""
 		Tallys the results from all the rounds to determine the overall winner.
 		"""
@@ -70,5 +75,12 @@ class Game():
 			self.tally[self.player2.name]['wins']+=1 if value == self.player2.name else 0
 			self.tally[self.player2.name]['draws']+=1 if value is None else 0
 			self.tally[self.player2.name]['losses']+=1 if value == self.player1.name else 0
-		tally_df=pd.DataFrame(self.tally)
-		return tally_df.to_markdown()
+		if verbose:
+			print('\n--- FINAL RESULT ---\n')
+			tally_pretty=pd.DataFrame(self.tally).to_markdown()
+			print(tally_pretty)
+			if self.tally[self.player1.name]['wins'] == self.tally[self.player2.name]['wins']:
+				print('\nIt\'s a draw!\n')
+			else:
+				winner=self.player1.name if self.tally[self.player1.name]['wins'] > self.tally[self.player2.name]['wins'] else self.player2.name
+				print('\n{player} wins the game!\n'.format(player=winner))
